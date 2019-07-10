@@ -41,7 +41,6 @@
             // 
             this.service_installer.Description = "Service for count hours of application runtime";
             this.service_installer.ServiceName = "Hours Counter";
-            this.service_installer.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
             // 
             // ProjectInstaller
             // 

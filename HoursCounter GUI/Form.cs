@@ -28,8 +28,11 @@ namespace HoursCounterGUI
 
         private void OnStart(object sender, EventArgs e)
         {
-            File.Create(Environment.SpecialFolder.SystemX86 + @"\HCGUI");
-            File.WriteAllText(Environment.SpecialFolder.SystemX86 + @"\HCGUI", filesDirectory);
+            FileStream GUIPointer = new FileStream(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData) + @"\HCGUI", FileMode.OpenOrCreate);
+            using (StreamWriter file = new StreamWriter(GUIPointer))
+            {
+                file.Write(filesDirectory);
+            }
 
             detailedApps = File.ReadAllLines(filesDirectory + "Apps.data").ToList();
 
