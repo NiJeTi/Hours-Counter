@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoursCounter Service", "HoursCounter Service\HoursCounter Service.csproj", "{C04D6B4D-418F-4B1E-8235-F00CE5B57DDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoursCounter GUI", "HoursCounter GUI\HoursCounter GUI.csproj", "{747581B1-7980-46D3-98D1-17B450204F6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C04D6B4D-418F-4B1E-8235-F00CE5B57DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C04D6B4D-418F-4B1E-8235-F00CE5B57DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C04D6B4D-418F-4B1E-8235-F00CE5B57DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C04D6B4D-418F-4B1E-8235-F00CE5B57DDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{747581B1-7980-46D3-98D1-17B450204F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{747581B1-7980-46D3-98D1-17B450204F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{747581B1-7980-46D3-98D1-17B450204F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{747581B1-7980-46D3-98D1-17B450204F6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6EF2A781-A439-44B6-9E37-5E7F1D363FF7}
+	EndGlobalSection
+EndGlobal
