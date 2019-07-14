@@ -1,4 +1,4 @@
-![Project Status](https://img.shields.io/badge/status-developing-orange.svg)
+![Project Status](https://img.shields.io/badge/status-finished-blue.svg)
 # HoursCounter
 Counting time of selected programs use
 ------------------------------------------
