@@ -58,7 +58,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F53EB875D2060EC6ADDE4AB4C089CD8A"
+        "OwnerKey" = "8:_2A1C947619804B46A40FFF6D9AE37CD7"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -70,7 +70,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2A1C947619804B46A40FFF6D9AE37CD7"
+        "OwnerKey" = "8:_F53EB875D2060EC6ADDE4AB4C089CD8A"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -91,6 +91,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -930,7 +938,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_2A1C947619804B46A40FFF6D9AE37CD7"
             {
-            "SourcePath" = "8:..\\HoursCounter Service\\obj\\Release\\HoursCounter Service.exe"
+            "SourcePath" = "8:..\\HoursCounter Service\\obj\\Debug\\HoursCounter Service.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_8E8505E3DACA46FCA5B9E543F0EE514B"
@@ -958,7 +966,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_DD1D0120403540D59E2C56E97C29DA7F"
             {
-            "SourcePath" = "8:..\\HoursCounter GUI\\obj\\Release\\HoursCounter.exe"
+            "SourcePath" = "8:..\\HoursCounter GUI\\obj\\Debug\\HoursCounter.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_8E8505E3DACA46FCA5B9E543F0EE514B"

@@ -28,7 +28,11 @@ namespace HoursCounterGUI
 
         private void OnStart(object sender, EventArgs e)
         {
-            FileStream GUIPointer = new FileStream(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData) + @"\HCGUI", FileMode.OpenOrCreate);
+            string filePath = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData) + @"\HCGUI";
+
+            File.Delete(filePath);
+
+            FileStream GUIPointer = new FileStream(filePath, FileMode.Create);
             using (StreamWriter file = new StreamWriter(GUIPointer))
             {
                 file.Write(filesDirectory);
@@ -193,21 +197,37 @@ namespace HoursCounterGUI
 
         private void Start_Click(object sender, EventArgs e)
         {
+            startToolStripMenuItem.Enabled = false;
+
             serviceController.Start();
+
+            serviceController.WaitForStatus(ServiceControllerStatus.Running);
+
+            startToolStripMenuItem.Enabled = true;
         }
 
         private void Stop_Click(object sender, EventArgs e)
         {
+            stopToolStripMenuItem.Enabled = false;
+
             serviceController.Stop();
+
+            serviceController.WaitForStatus(ServiceControllerStatus.Stopped);
+
+            stopToolStripMenuItem.Enabled = true;
         }
 
         private void Restart_Click(object sender, EventArgs e)
         {
+            restartToolStripMenuItem.Enabled = false;
+
             serviceController.Stop();
 
             serviceController.WaitForStatus(ServiceControllerStatus.Stopped);
 
             serviceController.Start();
+
+            restartToolStripMenuItem.Enabled = true;
         }
     }
 }

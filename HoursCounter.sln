@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoursCounter Service", "Hou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoursCounter GUI", "HoursCounter GUI\HoursCounter GUI.csproj", "{747581B1-7980-46D3-98D1-17B450204F6A}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HoursCounter Setup", "HoursCounter Setup\HoursCounter Setup.vdproj", "{D07AEC19-135C-4D2F-94BE-915CF7BA90EA}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,8 +21,6 @@ Global
 		{747581B1-7980-46D3-98D1-17B450204F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{747581B1-7980-46D3-98D1-17B450204F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{747581B1-7980-46D3-98D1-17B450204F6A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D07AEC19-135C-4D2F-94BE-915CF7BA90EA}.Debug|Any CPU.ActiveCfg = Debug
-		{D07AEC19-135C-4D2F-94BE-915CF7BA90EA}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

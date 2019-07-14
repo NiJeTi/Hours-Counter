@@ -32,6 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.serviceStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.serviceActions = new System.Windows.Forms.ToolStripDropDownButton();
+            this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.appsList = new System.Windows.Forms.ListBox();
             this.addButton = new System.Windows.Forms.Button();
             this.removeButton = new System.Windows.Forms.Button();
@@ -40,10 +44,6 @@
             this.appAdd = new System.Windows.Forms.OpenFileDialog();
             this.nameLabel = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.Label();
-            this.serviceActions = new System.Windows.Forms.ToolStripDropDownButton();
-            this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.stopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.statusStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.formBindingSource)).BeginInit();
@@ -64,6 +64,40 @@
             this.serviceStatus.Name = "serviceStatus";
             this.serviceStatus.Size = new System.Drawing.Size(75, 17);
             this.serviceStatus.Text = "serviceStatus";
+            // 
+            // serviceActions
+            // 
+            this.serviceActions.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.serviceActions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.restartToolStripMenuItem,
+            this.stopToolStripMenuItem,
+            this.startToolStripMenuItem});
+            this.serviceActions.Image = ((System.Drawing.Image)(resources.GetObject("serviceActions.Image")));
+            this.serviceActions.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.serviceActions.Name = "serviceActions";
+            this.serviceActions.Size = new System.Drawing.Size(29, 20);
+            this.serviceActions.Text = "serviceActions";
+            // 
+            // restartToolStripMenuItem
+            // 
+            this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
+            this.restartToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.restartToolStripMenuItem.Text = "Restart";
+            this.restartToolStripMenuItem.Click += new System.EventHandler(this.Restart_Click);
+            // 
+            // stopToolStripMenuItem
+            // 
+            this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
+            this.stopToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.stopToolStripMenuItem.Text = "Stop";
+            this.stopToolStripMenuItem.Click += new System.EventHandler(this.Stop_Click);
+            // 
+            // startToolStripMenuItem
+            // 
+            this.startToolStripMenuItem.Name = "startToolStripMenuItem";
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.startToolStripMenuItem.Text = "Start";
+            this.startToolStripMenuItem.Click += new System.EventHandler(this.Start_Click);
             // 
             // appsList
             // 
@@ -139,40 +173,6 @@
             this.name.Size = new System.Drawing.Size(100, 20);
             this.name.TabIndex = 8;
             this.name.Text = "<select app>";
-            // 
-            // serviceActions
-            // 
-            this.serviceActions.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.serviceActions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.restartToolStripMenuItem,
-            this.stopToolStripMenuItem,
-            this.startToolStripMenuItem});
-            this.serviceActions.Image = ((System.Drawing.Image)(resources.GetObject("serviceActions.Image")));
-            this.serviceActions.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.serviceActions.Name = "serviceActions";
-            this.serviceActions.Size = new System.Drawing.Size(29, 20);
-            this.serviceActions.Text = "serviceActions";
-            // 
-            // restartToolStripMenuItem
-            // 
-            this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
-            this.restartToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
-            this.restartToolStripMenuItem.Text = "Restart";
-            this.restartToolStripMenuItem.Click += new System.EventHandler(this.Restart_Click);
-            // 
-            // stopToolStripMenuItem
-            // 
-            this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
-            this.stopToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
-            this.stopToolStripMenuItem.Text = "Stop";
-            this.stopToolStripMenuItem.Click += new System.EventHandler(this.Stop_Click);
-            // 
-            // startToolStripMenuItem
-            // 
-            this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
-            this.startToolStripMenuItem.Text = "Start";
-            this.startToolStripMenuItem.Click += new System.EventHandler(this.Start_Click);
             // 
             // formBindingSource
             // 

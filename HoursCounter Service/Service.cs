@@ -24,8 +24,6 @@ namespace HoursCounterService
 
         protected override void OnStart(string[] args)
         {
-            System.Threading.Thread.Sleep(10000);
-
             filesDirectory = File.ReadAllText(System.Environment.GetFolderPath(System.Environment.SpecialFolder.CommonApplicationData) + @"\HCGUI");
 
             appsTime = new Dictionary<string, int>(0);
